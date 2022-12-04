@@ -1,7 +1,10 @@
 body {
   background: url("images/bg-desktop.svg");
-  background-color: purple;
+  background-color: rgb(87, 49, 95);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+body main {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
