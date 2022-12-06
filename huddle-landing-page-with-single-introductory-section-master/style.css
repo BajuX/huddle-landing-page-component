@@ -1,10 +1,64 @@
-body {
-  background: url("images/bg-desktop.svg");
-  background-color: rgb(87, 49, 95);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: white;
+}
+
+body main .page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1728px;
+  height: 720px;
+  background: url("images/bg-desktop.svg") hsl(257deg, 40%, 49%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-body main {
+body main .page .logo {
+  position: relative;
+  top: 5%;
+  left: 3.5%;
+}
+body main .page .content {
   display: flex;
+}
+body main .page .content svg {
+  width: 85%;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+body main .page .content .description {
+  margin-top: 100px;
+}
+body main .page .content .description h1 {
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  width: 70%;
+}
+body main .page .content .description p {
+  width: 64%;
+  line-height: 25px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+body main .page .content .description button {
+  color: hsl(300deg, 69%, 71%);
+  border: none;
+  background: white;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+body main .page .media-icons {
+  position: relative;
+  left: 85%;
+  bottom: 2%;
 }/*# sourceMappingURL=style.css.map */
