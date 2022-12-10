@@ -54,6 +54,7 @@ body {
             margin-top: 30px;
           }
           button {
+            cursor: pointer;
             color: hsl(300, 69%, 71%);
             border: none;
             background: white;
@@ -61,11 +62,15 @@ body {
             height: 60px;
             border-radius: 50px;
             margin-top: 30px;
+            box-shadow: 0px 0px 28px 2px rgb(41, 41, 44);
+            &:hover {
+              background: hsl(300, 69%, 71%);
+              color: white;
+            }
           }
         }
-        
       }
-      .media-icons{
+      .media-icons {
         position: relative;
         left: 85%;
         bottom: 2%;
