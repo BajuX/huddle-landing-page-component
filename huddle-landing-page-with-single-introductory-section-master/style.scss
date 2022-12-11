@@ -82,21 +82,3 @@ body {
     }
   }
 }
-
-@media screen and (max-width: 375px) {
-  body {
-    main {
-      .page {
-        @include resolution(375px,1 ,1.2 );
-        .content {
-          display: flex;
-          flex-direction: column;
-          svg {
-            width: 50%;
-            height: 75%;
-          }
-        }
-      }
-    }
-  }
-}
