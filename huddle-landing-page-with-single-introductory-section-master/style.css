@@ -15,7 +15,7 @@ body main .page {
   bottom: 0;
   transform: translate(-50%, -50%);
   width: 1728px;
-  height: 720px;
+  height: 864px;
   background: url("images/bg-desktop.svg") hsl(257deg, 40%, 49%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,8 +30,8 @@ body main .page .logo {
 body main .page .content {
   display: flex;
 }
-body main .page .content svg {
-  width: 85%;
+body main .page .content img {
+  width: 100%;
   margin-top: 80px;
   margin-left: 60px;
 }

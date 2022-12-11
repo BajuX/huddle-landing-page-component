@@ -29,7 +29,7 @@ body {
       }
       @include position(absolute, 50%, 50%, 0);
       transform: translate(-50%, -50%);
-      @include resolution(1440px, 1.2, 0.5);
+      @include resolution(1440px, 1.2, 0.6);
       background: url("images/bg-desktop.svg") hsl(257, 40%, 49%);
       background-repeat: no-repeat;
       background-size: cover;
@@ -37,8 +37,8 @@ body {
 
       .content {
         display: flex;
-        svg {
-          width: 85%;
+        img {
+          width: 100%;
           margin: {
             top: 80px;
             left: 60px;
