@@ -25,9 +25,7 @@ body {
   main {
     .page {
       .logo {
-        position: relative;
-        top: 5%;
-        left: 3.5%;
+        @include position(relative, 5%, 3.5%, 0);
       }
       @include position(absolute, 50%, 50%, 0);
       transform: translate(-50%, -50%);
@@ -80,6 +78,24 @@ body {
       }
       .media-icons {
         @include position(relative, -1%, 85%, 2%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    main {
+      .page {
+        @include resolution(375px,1 ,1.2 );
+        .content {
+          display: flex;
+          flex-direction: column;
+          svg {
+            width: 50%;
+            height: 75%;
+          }
+        }
       }
     }
   }
