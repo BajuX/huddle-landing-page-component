@@ -35,11 +35,22 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      @media (max-width:375px) {
+        background: url("images/bg-mobile.svg") hsl(257, 40%, 49%);
+        @include resolution(375px, 2.7 , 2);
+        .logo {
+          @include position(relative, 2% ,32% ,0 );
+          @include resolution(4px, 75 , 50 )
+        }
+    }
 
       .content {
         display: flex;
         position: relative;
         top: -12.5%;
+        @media (max-width:375px) {
+            flex-direction: column;
+        }
         img {
           width: 100%;
           margin: {
