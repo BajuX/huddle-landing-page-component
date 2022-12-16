@@ -25,7 +25,8 @@ body {
   main {
     .page {
       .logo {
-        @include position(relative, 5%, 3.5%, 0);
+        @include position(relative, -3%, 3%, 0);
+        @include resolution(5px, 85, 40);
       }
       @include position(absolute, 50%, 50%, 0);
       transform: translate(-50%, -50%);
@@ -37,6 +38,8 @@ body {
 
       .content {
         display: flex;
+        position: relative;
+        top: -12.5%;
         img {
           width: 100%;
           margin: {
@@ -47,17 +50,18 @@ body {
         .description {
           margin: {
             top: 100px;
+            left: 50px;
           }
           h1 {
             font-size: 48px;
             font-family: "Poppins", sans-serif;
             font-weight: 600;
-            width: 70%;
+            width: 80%;
           }
           p {
-            width: 64%;
-            line-height: 25px;
-            font-size: 18px;
+            width: 70%;
+            line-height: 35px;
+            font-size: 24px;
             margin-top: 30px;
           }
           button {
@@ -65,10 +69,11 @@ body {
             color: hsl(300, 69%, 71%);
             border: none;
             background: white;
-            @include resolution(10px, 20, 6);
+            @include resolution(10px, 30, 8);
             border-radius: 50px;
             margin-top: 30px;
             box-shadow: 0px 0px 28px 2px rgb(41, 41, 44);
+            font-size: 24px;
             &:hover {
               background: hsl(300, 69%, 71%);
               color: white;
@@ -76,8 +81,11 @@ body {
           }
         }
       }
-      .media-icons {
-        @include position(relative, -1%, 85%, 2%);
+      .media {
+        @include position(relative, -5%, 84%, 2%);
+        i + i {
+          margin-left: 25px;
+        }
       }
     }
   }

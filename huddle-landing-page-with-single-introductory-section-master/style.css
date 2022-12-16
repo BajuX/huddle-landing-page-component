@@ -23,12 +23,16 @@ body main .page {
 }
 body main .page .logo {
   position: relative;
-  top: 5%;
-  left: 3.5%;
+  top: -3%;
+  left: 3%;
   bottom: 0;
+  width: 425px;
+  height: 200px;
 }
 body main .page .content {
   display: flex;
+  position: relative;
+  top: -12.5%;
 }
 body main .page .content img {
   width: 100%;
@@ -37,17 +41,18 @@ body main .page .content img {
 }
 body main .page .content .description {
   margin-top: 100px;
+  margin-left: 50px;
 }
 body main .page .content .description h1 {
   font-size: 48px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  width: 70%;
+  width: 80%;
 }
 body main .page .content .description p {
-  width: 64%;
-  line-height: 25px;
-  font-size: 18px;
+  width: 70%;
+  line-height: 35px;
+  font-size: 24px;
   margin-top: 30px;
 }
 body main .page .content .description button {
@@ -55,19 +60,23 @@ body main .page .content .description button {
   color: hsl(300deg, 69%, 71%);
   border: none;
   background: white;
-  width: 200px;
-  height: 60px;
+  width: 300px;
+  height: 80px;
   border-radius: 50px;
   margin-top: 30px;
   box-shadow: 0px 0px 28px 2px rgb(41, 41, 44);
+  font-size: 24px;
 }
 body main .page .content .description button:hover {
   background: hsl(300deg, 69%, 71%);
   color: white;
 }
-body main .page .media-icons {
+body main .page .media {
   position: relative;
-  top: -1%;
-  left: 85%;
+  top: -5%;
+  left: 84%;
   bottom: 2%;
+}
+body main .page .media i + i {
+  margin-left: 25px;
 }/*# sourceMappingURL=style.css.map */
