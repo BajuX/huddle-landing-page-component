@@ -32,15 +32,19 @@ body main .page .logo {
 @media (max-width: 375px) {
   body main .page {
     background: url("images/bg-mobile.svg") hsl(257deg, 40%, 49%);
-    width: 1012.5px;
-    height: 750px;
+    width: 637.5px;
+    height: 1125px;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    bottom: 0;
   }
   body main .page .logo {
     position: relative;
-    top: 2%;
-    left: 32%;
+    top: 6%;
+    left: 16%;
     bottom: 0;
-    width: 300px;
+    width: 260px;
     height: 200px;
   }
 }
@@ -59,6 +63,15 @@ body main .page .content img {
   margin-top: 80px;
   margin-left: 60px;
 }
+@media (max-width: 375px) {
+  body main .page .content img {
+    width: 70%;
+    position: relative;
+    top: 80px;
+    left: 50px;
+    bottom: 0px;
+  }
+}
 body main .page .content .description {
   margin-top: 100px;
   margin-left: 50px;
@@ -69,11 +82,33 @@ body main .page .content .description h1 {
   font-weight: 600;
   width: 80%;
 }
+@media (max-width: 375px) {
+  body main .page .content .description h1 {
+    font-size: 36px;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    top: 0%;
+    left: 10%;
+    bottom: 0;
+  }
+}
 body main .page .content .description p {
   width: 70%;
   line-height: 35px;
   font-size: 24px;
   margin-top: 30px;
+}
+@media (max-width: 375px) {
+  body main .page .content .description p {
+    position: relative;
+    top: 0%;
+    left: 18%;
+    bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    width: 65%;
+  }
 }
 body main .page .content .description button {
   cursor: pointer;
@@ -91,12 +126,31 @@ body main .page .content .description button:hover {
   background: hsl(300deg, 69%, 71%);
   color: white;
 }
+@media (max-width: 375px) {
+  body main .page .content .description button {
+    position: relative;
+    top: 0%;
+    left: 25%;
+    bottom: 0;
+  }
+}
 body main .page .media {
   position: relative;
   top: -5%;
   left: 84%;
   bottom: 2%;
 }
+body main .page .media i {
+  cursor: pointer;
+}
 body main .page .media i + i {
   margin-left: 25px;
+}
+@media (max-width: 375px) {
+  body main .page .media {
+    position: relative;
+    top: -9%;
+    left: 35%;
+    bottom: 5%;
+  }
 }/*# sourceMappingURL=style.css.map */

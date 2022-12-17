@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
-
 @mixin resolution($px, $w, $h) {
   width: $px * $w;
   height: $px * $h;
 }
+
+$max-width: "max-width: 375px";
 
 @mixin position($pos, $t, $l, $b) {
   position: $pos;
@@ -35,27 +36,32 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      @media (max-width:375px) {
+      @media (#{$max-width}) {
         background: url("images/bg-mobile.svg") hsl(257, 40%, 49%);
-        @include resolution(375px, 2.7 , 2);
+        @include resolution(375px, 1.7, 3);
+        @include position(absolute, 70%, 70%, 0);
         .logo {
-          @include position(relative, 2% ,32% ,0 );
-          @include resolution(4px, 75 , 50 )
+          @include position(relative, 6%, 16%, 0);
+          @include resolution(4px, 65, 50);
         }
-    }
+      }
 
       .content {
         display: flex;
         position: relative;
         top: -12.5%;
-        @media (max-width:375px) {
-            flex-direction: column;
+        @media (#{$max-width}) {
+          flex-direction: column;
         }
         img {
           width: 100%;
           margin: {
             top: 80px;
             left: 60px;
+          }
+          @media (#{$max-width}) {
+            width: 70%;
+            @include position(relative,80px, 50px,0px );
           }
         }
         .description {
@@ -68,12 +74,24 @@ body {
             font-family: "Poppins", sans-serif;
             font-weight: 600;
             width: 80%;
+            @media (#{$max-width}) {
+              font-size: 36px;
+              text-align: center;
+              width: 80%;
+              @include position(relative, 0%, 10%, 0);
+            }
           }
           p {
             width: 70%;
             line-height: 35px;
             font-size: 24px;
             margin-top: 30px;
+            @media (#{$max-width}) {
+              @include position(relative, 0%, 18%, 0);
+              font-size: 20px;
+              text-align: center;
+              width: 65%;
+            }
           }
           button {
             cursor: pointer;
@@ -89,13 +107,24 @@ body {
               background: hsl(300, 69%, 71%);
               color: white;
             }
+
+            @media (#{$max-width}){
+              @include position(relative, 0% , 25% , 0 );
+            }
           }
         }
       }
       .media {
         @include position(relative, -5%, 84%, 2%);
+        i {
+          cursor: pointer;
+        }
         i + i {
+          
           margin-left: 25px;
+        }
+        @media (#{$max-width}){
+          @include position(relative, -9% ,35% , 5% );
         }
       }
     }
